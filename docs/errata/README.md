@@ -7,9 +7,8 @@ To turn those annoyances into something positive, I will donate $5 to [UNICEF US
 Also below, I added a small leaderboard to keep track of the errata submissions and errors you found. Please let me know if you don't want to be explicitely mentioned in that list! 
 
 
-- Amount for the next donation: 90$
-- Amount donated: 0$
-
+- Amount for the next donation: 0$
+- Amount donated: [90$](./donations/unicef-2019-11-01.png)
 
 ---
 
@@ -67,6 +66,11 @@ The existing indices shouldn't be reused:
 pg. 55
 
 ![](./images/pg55.png)
+
+Note that in scikit-learn version 0.20 (compared to 0.19) you may get different perceptron results.
+In any case, for the perceptron, this is not important as it does not converge anyway when the classes are not linearly seperable, so, the results also depend on the number of iterations and the random seed for data shuffling. The perceptron, in this case, will cyrcle through ~2-9 missclassifications no matter what, since due to the nature of the algorithm, it will never converge on a dataset that is not seperable via a linear boundary/hyperplane.
+
+
 
 pg. 56
 
@@ -147,7 +151,7 @@ The documentation of `joblib` has recently moved to a new webpage and previous a
 pg. 340
 
 The second paragraph (right under the equation) starts with "Here, x is the feature ..." Instead of "x" it should be "x_i" ("x" with a subscript "i")
- 
+
 pg. 344
 
 > Unfortunately, there is ~now~ {not} a universal approach for dealing with non-randomness in residual plots, and it requires experimentation
